@@ -7,6 +7,9 @@ migrate:
 up:
 	docker-compose up -d
 
+down:
+	docker-compose down
+
 generate:
 	docker-compose run --rm php php yii queue/generate
 
