@@ -14,6 +14,7 @@ class QueueProcessor
     {
         $this->threadNumber = $threadNumber;
         $this->logger = new QueueLog();
+        $this->logger->init();
     }
 
     public function run()

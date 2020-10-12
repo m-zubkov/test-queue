@@ -12,6 +12,13 @@ class QueueLog
         $this->logPath = \Yii::getAlias('@runtime') . "/logs/account/";
     }
 
+    public function init()
+    {
+        if (!is_dir($this->logPath)) {
+            mkdir($this->logPath);
+        }
+    }
+
     /**
      * @param int $account_id
      * @param string $message
