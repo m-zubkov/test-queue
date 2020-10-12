@@ -26,12 +26,7 @@ class QueueTask extends \Threaded
         usleep(1000000);
         //(new \app\models\QueueLog())->saveLog($this->account_id, $this->message);
 
-        $file = \Yii::getAlias('@runtime') . "/logs/account/{$this->account_id}.log";
+        $file = \Yii::getAlias('@runtime') . "/account/{$this->account_id}.log";
         file_put_contents($file, $this->message . "\r\n", FILE_APPEND);
-        /*
-        $fp = fopen($file, 'a');
-        fwrite($fp, $this->message . "\r\n");
-        fclose($fp);
-        */
     }
 }

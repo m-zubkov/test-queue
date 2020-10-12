@@ -9,7 +9,7 @@ class QueueLog
 
     public function __construct()
     {
-        $this->logPath = \Yii::getAlias('@runtime') . "/logs/account/";
+        $this->logPath = \Yii::getAlias('@runtime') . "/account/";
     }
 
     public function init()
