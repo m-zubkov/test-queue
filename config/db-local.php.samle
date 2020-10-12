@@ -1,0 +1,9 @@
+<?php
+
+return [
+    'class' => 'yii\db\Connection',
+    'dsn' => 'mysql:host=mysql;dbname=test_queue_project',
+    'username' => 'test_queue_project',
+    'password' => 'test',
+    'charset' => 'utf8',
+];
